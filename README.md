@@ -16,10 +16,10 @@
 2. 编译
     ```
     # macos编译debug
-    bazel build //test:dag_test_debug --strip=never --define platform=macos
+    bazel build //test:dag_test_debug --compilation_mode=dbg --strip=never --define platform=macos
 
     # linux编译debug
-    bazel build //test:dag_test_debug --strip=never --define platform=linux
+    bazel build //test:dag_test_debug --compilation_mode=dbg --strip=never --define platform=linux
 
     # release版本
     bazel build //test:dag_test_release --define platform=linux
